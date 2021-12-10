@@ -8,6 +8,7 @@ const person = require('./src/controller/person-controller');
 const product = require('./src/controller/product-controller');
 const URLlog = require('./src/middleware/URLlog');
 const student = require('./src/controller/student-controller');
+const aun = require("./src/controller/aun-controller");
 
 
 // mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser:true })
@@ -19,12 +20,13 @@ app.use(URLlog);
 
 //homepage route
 app.get('/',(req,res)=>{
-    res.send('home')
+    res.send('HelloWorld')
 })
 
 app.use(person);
 app.use(product)
 app.use(student);
+app.use(aun);
 
 app.listen(PORT, ()=>{
     console.log(`server is running on PORT : ${PORT}`)
