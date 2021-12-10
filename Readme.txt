@@ -1,3 +1,7 @@
+Must install node , express before use
+
+
+
 Conect with mongoDB
 
 - install mongoose >> npm i mongoose --save

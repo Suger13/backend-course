@@ -1,3 +1,7 @@
+//app.js เป็น Entry file ที่เอาไว้ใช้ run คำสั่ง node app.js หรือ nodemon app.js เพื่อสั่งรันเซิฟเวอร์
+//โดยทั้ง route หรือ middle ware ต่างๆ จำเป็นต้องนำมา import ใน entry file เพื่อใช้รันคำสั่งทั้งหมด
+
+
 require('dotenv').config();
 const { urlencoded } = require('express');
 const express = require('express');
